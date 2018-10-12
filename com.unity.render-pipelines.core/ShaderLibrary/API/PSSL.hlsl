@@ -1,5 +1,7 @@
 // This file assume SHADER_API_D3D11 is defined
 
+#define SUPPORTS_WAVE_INTRINSICS
+
 #define INTRINSIC_BITFIELD_EXTRACT
 #define BitFieldExtract __v_bfe_u32
 #define INTRINSIC_BITFIELD_EXTRACT_SIGN_EXTEND

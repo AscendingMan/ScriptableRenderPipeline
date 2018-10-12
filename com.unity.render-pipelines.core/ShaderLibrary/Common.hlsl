@@ -180,8 +180,8 @@
 #define LODDitheringTransition ERROR_ON_UNSUPPORTED_FUNC(LODDitheringTransition)
 #endif
 
-// On non-consoles we error on cross-lane operations
-#if !defined(SHADER_API_PSSL) && !defined(SHADER_API_XBOXONE)
+// On everything but GCN consoles we error on cross-lane operations
+#ifndef SUPPORTS_WAVE_INTRINSICS
 #define WaveMinInt ERROR_ON_UNSUPPORTED_FUNC(WaveMinInt)
 #define WaveMinUint ERROR_ON_UNSUPPORTED_FUNC(WaveMinUint)
 #define WaveMinFloat ERROR_ON_UNSUPPORTED_FUNC(WaveMinFloat)

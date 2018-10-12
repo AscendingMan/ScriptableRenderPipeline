@@ -15,6 +15,8 @@
 #define CBUFFER_END };
 
 // Intrinsics
+#define SUPPORTS_WAVE_INTRINSICS
+
 #define INTRINSIC_WAVEREADFIRSTLANE
 #define WaveReadFirstLane __XB_MakeUniform
 #define INTRINSIC_MINMAX3
